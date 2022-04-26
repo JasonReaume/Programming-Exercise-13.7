@@ -22,12 +22,12 @@ public class Square extends GeometricObject implements Colorable {
   }
 
   // Set the length of the side of a Square object
-  private void setSide(double side) {
+  public void setSide(double side) {
     this.side = side;
   }
 
   // Return the length of the side of a Square object
-  private double getSide() {
+  public double getSide() {
     return side;
   }
 
@@ -46,7 +46,7 @@ public class Square extends GeometricObject implements Colorable {
   // Override the abstract method howToColor in Colorable
   @Override
   public void howToColor() {
-    System.out.print("Color all four sides.");
+    System.out.print("Color all four sides.\n");
   }
 
 }
